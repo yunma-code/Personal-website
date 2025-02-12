@@ -1,0 +1,7 @@
+h1 {
+  font-family: "Courier New", monospace;
+  color: white;
+  border-right: 3px solid #3498db;
+  overflow: visible !important; 
+  white-space: nowrap !important; 
+}
