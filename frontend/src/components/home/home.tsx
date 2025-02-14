@@ -8,9 +8,20 @@ const Home: React.FC =() => {
 
 	return(
 		<div className="home-container">
-			<div className="typewriter-container">
-				<Typewriter />
+
+			<div className="content-box">
+				<div className="content-text">
+					Hi --I'm a software developer and musician based in Boston, passionate about  
+					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Web development, Cloud computing, AI </span> 
+					and <span style={{ color: '#2980b9', fontWeight: 'bold'}}> Music Technology.</span>
+					<p>
+					<br />Transitioning from a music background to computer science, I aim to combine my skills and creative 
+					problem-solving to develop user-friendly platforms and innovative audio tools.
+					</p>
+					<br />Check out my work in both coding and music composition!
+				</div>
 			</div>
+
 			<motion.div	
 				className="home-bubble-image"
 				layout
@@ -26,16 +37,25 @@ const Home: React.FC =() => {
 			>
 			</motion.div>
 
+			<div className="technical-skills">
+				<h2>Technical Skills</h2>
+				<li><b>Programming Languages: </b> Java, JavaScript, TypeScript, C++, Python, SQL, HTML/CSS</li> 
+				<li><b>Frameworks: </b> React, Node.js,  </li>
+				<li><b>Tools: </b></li>
+				<li><b>Machine Learning: </b></li>
+			</div>
+
 			{showContent && (
 				<motion.div
-					className="content-box"
-					initial={{ opacity: 0, y: -20 }}
+					className="welcome-text"
           animate={{ opacity: showContent ? 1: 0, y: -20 }}
           exit={{ opacity: 0, y: -20 }}
 				>
-					<h1>
-						short self intro text here
-					</h1>
+					<div className="typewriter-container">
+						<Typewriter />
+					</div>
+					
+					
 				</motion.div>
 			)}
 		</div>
