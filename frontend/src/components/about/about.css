@@ -1,4 +1,4 @@
-.home-container {
+.about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 
-.home-bubble-image {
+.about-bubble-image {
 	position: fixed;
   width: 400px;
   height: 400px;
@@ -47,15 +47,15 @@
 }
 
 
-.home-bubble:hover {
+.about-bubble:hover {
   background-color: #2980b9;
 }
 
-.content-box {
+.about-box {
   width: 850px;
   position: absolute;
-  top: 15%;
-  left: 5%;
+  top: 35%;
+  left: 40%;
   /* padding: 22px;
   border-radius: 12px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
@@ -63,7 +63,7 @@
   margin-top: 20px;
 }
 
-.content-box h1 {
+.about-box h1 {
   color: white;
 }
 
@@ -79,7 +79,7 @@
   margin-top: 20px;
 }
 
-.content-text {
+.about-text {
   max-height: 150px;
   overflow-y: auto;
   text-align: left;
@@ -88,9 +88,9 @@
   overflow: visible !important; 
 }
 
-.technical-skills {
+.education-box {
   position: absolute;
-  top: 70%;
+  top: 90%;
   left: 5%;
   /* padding: 22px;
   border-radius: 12px;
@@ -99,14 +99,8 @@
   text-align: left;
   margin-top: 20px;
   overflow-y: auto;
+	color: white;
 }
 
-.technical-skills h3 {
-  color: white;
- 
-}
-.technical-skills li {
-  color: white;
-  
-}
+
 
