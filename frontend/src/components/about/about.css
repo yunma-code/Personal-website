@@ -1,0 +1,111 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.about-bubble-image {
+	position: fixed;
+  width: 400px;
+  height: 400px;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  transform-origin: center;
+}
+
+
+.about-bubble:hover {
+  background-color: #2980b9;
+}
+
+.about-box {
+  /* width: 850px; */
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  padding: 22px;
+  border-radius: 12px;
+  background-color: rgb(7, 11, 38, 0.2);
+  text-align: left;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.about-box h1 {
+  color: white;
+}
+
+.welcome-text {
+  width: 700px;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  /* padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  text-align: right;
+  margin-top: 20px;
+}
+
+.about-text {
+  width: 100%;
+  padding-left: 40%;
+  /* overflow-y: auto; */
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  overflow: visible !important; 
+}
+
+.education-box {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(7, 11, 38, 0.2);
+  text-align: left;
+  margin-top: 20px;
+  overflow-y: auto;
+	color: white;
+}
+
+.education-content {
+  padding-left: 5%;
+}
+
+
+
+
+.typewriter-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.typewriter-container h1 {
+  font-family: "Courier New", monospace;
+  color: white;
+  border-right: 3px solid #6495ed;
+  overflow: visible !important; 
+  white-space: nowrap !important; 
+}

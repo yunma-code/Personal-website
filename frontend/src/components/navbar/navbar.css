@@ -1,0 +1,26 @@
+.custom-navbar {
+  background-color: transparent !important; 
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand, .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: white !important;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.nav-link.active, .navbar-brand.active {
+  color: #6495ed; 
+  border-bottom: 3px solid #6495ed; 
+}
+
+.nav-link:hover {
+  color: #6495ed;
+}
