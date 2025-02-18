@@ -9,58 +9,17 @@
   background-color: black;
 }
 
-.typewriter-container {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.typewriter-container h1 {
-  font-family: "Courier New", monospace;
-  color: white;
-  border-right: 3px solid #6495ed;
-  overflow: visible !important; 
-  white-space: nowrap !important; 
-}
-
-
-.home-bubble-image {
-	position: fixed;
-  width: 400px;
-  height: 400px;
-  color: white;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
-  transform-origin: center;
-}
-
-
-.home-bubble:hover {
-  background-color: #2980b9;
-}
-
 .content-box {
-  width: 850px;
   position: absolute;
+  width: 100%;
   top: 15%;
-  left: 5%;
-  /* padding: 22px;
+  left: 0%;
+  padding: 22px;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+  background-color: rgb(7, 11, 38, 0.2);
   text-align: left;
   margin-top: 20px;
+  overflow-y: auto;
 }
 
 .content-box h1 {
@@ -68,7 +27,6 @@
 }
 
 .welcome-text {
-  width: 700px;
   position: absolute;
   top: 15%;
   left: 40%;
@@ -80,7 +38,7 @@
 }
 
 .content-text {
-  max-height: 150px;
+  padding-left: 5%;
   overflow-y: auto;
   text-align: left;
   font-size: 18px;
@@ -88,24 +46,33 @@
   overflow: visible !important; 
 }
 
-.technical-skills {
+.technical-box {
   position: absolute;
-  top: 70%;
-  left: 5%;
-  /* padding: 22px;
+  width: 100%;
+  top: 65%;
+  left: 0%;
+  padding: 22px;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  */
+  background-color: rgb(7, 11, 38, 0.2);
   text-align: left;
   margin-top: 20px;
   overflow-y: auto;
 }
 
-.technical-skills h3 {
+.technical-text {
+  padding-left: 5%;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  overflow: visible !important; 
+}
+
+.technical-text h3 {
   color: white;
  
 }
-.technical-skills li {
+.technical-text li {
   color: white;
   
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 
 const Typewriter: React.FC = () => {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = "Hello, welcome to my website!";
+  const fullText = "Hello, welcome!";
   const indexRef = useRef(0);
 
   useEffect(() => {

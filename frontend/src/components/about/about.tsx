@@ -16,8 +16,8 @@ const About: React.FC =() => {
 		// <div className="home-container" style={ homeStyle }>
 		<div className="about-container">
 			<div className="about-box">
-				<h1> Yun Ma</h1>
 				<div className="about-text">
+				<h1> Yun Ma</h1>
 					Hi --I'm a software developer and musician based in Boston, passionate about  <br />
 					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Web development</span>,
 					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Cloud computing</span>,
@@ -25,9 +25,9 @@ const About: React.FC =() => {
 					and <span style={{ color: '#2980b9', fontWeight: 'bold'}}> Music Technology.</span>
 					<p>
 					<br />Transitioning from a music background to computer science, I aim to combine my skills and creative 
-					problem-solving to develop user-friendly platforms and innovative audio tools.
-					</p>
+					problem-solving to develop user-friendly platforms and innovative audio tools. 
 					<br />Check out my work in both coding and music composition!
+					</p>
 				</div>
 			</div>
 
@@ -47,10 +47,12 @@ const About: React.FC =() => {
 			</motion.div>
 
 			<div className="education-box">
-				<h2>Education</h2>
-				<p>2023-2026 Northeastern University - MSCS in Computer Science</p>
-				<p>2021-2023 University of Michigan, Ann Arbor - MM in Music Theory and Composition</p>
-				<p>2017-2021 Boston Conservatory at Berklee - BM in Music Theory and Composition </p>
+				<div className="education-content">
+					<h2>Education</h2>
+					<p>2023-2026 Northeastern University - MSCS in Computer Science</p>
+					<p>2021-2023 University of Michigan, Ann Arbor - MM in Music Theory and Composition</p>
+					<p>2017-2021 Boston Conservatory at Berklee - BM in Music Theory and Composition </p>
+				</div>
 		</div>
 
 
