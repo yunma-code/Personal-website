@@ -16,14 +16,32 @@
   left: 0%;
   padding: 22px;
   border-radius: 12px;
-  background-color: rgb(7, 11, 38, 0.2);
+  /* background-color: rgb(7, 11, 38, 0.2); */
   text-align: left;
   margin-top: 20px;
   overflow-y: auto;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
 }
 
 .content-box h1 {
   color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.content-box h4 {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.content-box h5 {
+  color: white;
+  letter-spacing: 3px;
+  
+  font-size: 20px;
 }
 
 .welcome-text {

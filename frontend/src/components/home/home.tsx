@@ -12,13 +12,15 @@ const Home: React.FC =() => {
 						<h4>Bridging music and tech</h4>
 					</h1>
 					<br />
-					-- I'm a software developer and musician based in Boston, passionate about  <br />
+					<h5>
+					I'm a software developer and musician based in Boston, passionate about  <br />
 					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Web development</span>,
 					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Cloud computing</span>,
 					<span style={{ color: '#2980b9', fontWeight: 'bold'}}> Machine Learning </span> 
 					and <span style={{ color: '#2980b9', fontWeight: 'bold'}}> Music Technology.</span>
 					
 					<br />Check out my work in both coding and music composition!
+					</h5>
 				</div>
 			</div>
 		
