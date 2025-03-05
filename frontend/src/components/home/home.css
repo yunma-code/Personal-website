@@ -1,18 +1,18 @@
 .home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
   height: 100vh;
+  width: 100%;
   position: relative;
   overflow-y: auto;
   background-color: black;
 }
 
-.content-box {
-  position: absolute;
-  width: 100%;
-  top: 15%;
+.left-box {
+  position: sticky;
+  width: 40%;
+  top: 20%;
   left: 0%;
   padding: 22px;
   border-radius: 12px;
@@ -24,23 +24,34 @@
   letter-spacing: 2px;
 }
 
-.content-box h1 {
+.right-box {
+  /* position: relative; */
+  top: 20%;
+  width: 55%;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: left;
+  /* background-color: rgb(7, 11, 38, 0.2); */
+  /* text-align: left; */
+  overflow-y: auto;
+}
+
+.left-box h1 {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
 
-.content-box h4 {
+.left-box h4 {
   color: white;
   font-weight: bold;
   letter-spacing: 4px;
 }
 
-.content-box h5 {
+.left-box h5 {
   color: white;
   letter-spacing: 3px;
-  
   font-size: 20px;
 }
 
@@ -64,18 +75,7 @@
   overflow: visible !important; 
 }
 
-.technical-box {
-  position: absolute;
-  width: 100%;
-  top: 65%;
-  left: 0%;
-  padding: 22px;
-  border-radius: 12px;
-  background-color: rgb(7, 11, 38, 0.2);
-  text-align: left;
-  margin-top: 20px;
-  overflow-y: auto;
-}
+
 
 .technical-text {
   padding-left: 5%;
@@ -95,3 +95,33 @@
   
 }
 
+.navigation-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation-links li {
+  margin-bottom: 10px;
+}
+
+.navigation-links a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-links a:hover {
+  text-decoration: underline;
+}
+
+.technical-text,
+.projects-text,
+.education-text {
+  margin-bottom: 40px; 
+}
+
+.technical-text h3,
+.projects-text h3,
+.education-text h3 {
+  color: white;
+}
