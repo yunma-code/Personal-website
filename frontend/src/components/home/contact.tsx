@@ -4,8 +4,8 @@ import "../../tailwind.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: "",
   });
 
@@ -15,6 +15,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,8 +52,8 @@ const Contact = () => {
             <input
               type="text"
               id="name"
-              name="name"
-              value={formData.name}
+              name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
               className="w-full mt-2 p-2 bg-gray-800 text-white rounded-lg"
               required
@@ -66,8 +67,8 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              name="email"
-              value={formData.email}
+              name="from_email"
+              value={formData.from_email}
               onChange={handleChange}
               className="w-full mt-2 p-2 bg-gray-800 text-white rounded-lg"
               required
