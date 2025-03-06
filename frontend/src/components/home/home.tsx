@@ -1,15 +1,20 @@
-import React, { useState } from "react";
 import Education from "./education";
 import "./home.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Contact from "./contact";
 
 const Home: React.FC = () => {
 
 	const handleScroll = (id: string) => {
 		const element = document.getElementById(id);
-		if(element) {
+		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
 		}
 	};
+
+	const GitHubIcon = FaGithub as unknown as React.FC;
+	const LinkedinIcon = FaLinkedin as unknown as React.FC;
+
 
 	return (
 		<div className="home-container">
@@ -26,25 +31,27 @@ const Home: React.FC = () => {
 				<div className="navigation-links">
 					<ul>
 						<li>
-							<a onClick={() => handleScroll("about")}>About</a>
+							<button onClick={() => handleScroll("about")}>About</button>
 						</li>
 						<li>
-							<a onClick={() => handleScroll("technical-skills")}> Technical Skills</a>
+							<button onClick={() => handleScroll("technical-skills")}> Technical Skills</button>
 						</li>
 						<li>
-							<a onClick={() => handleScroll("projects")}>Projects</a>
+							<button onClick={() => handleScroll("projects")}>Projects</button>
 						</li>
 						<li>
-							<a onClick={() => handleScroll("education")}>Education & Experience</a>
+							<button onClick={() => handleScroll("education")}>Education & Experience</button>
+						</li>
+						<li>
+							<button onClick={() => handleScroll("contact")}>Contact</button>
 						</li>
 					</ul>
 				</div>
-
 			</div>
 
 			<div className="right-box">
 				<div id="about" className="intro-text ">
-					<br/>
+					<br />
 					<h5>
 						I'm a software developer and musician based in Boston, passionate
 						about{" "} <br />
@@ -64,18 +71,18 @@ const Home: React.FC = () => {
 							Music Technology.
 						</span>
 						<br />
-						<br/>
+						<br />
 						<p className="mb-6">
 							My interest lies on software development and machine learning, with a focus on creating platforms and tools that enhance user experiences. Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
 						Currently, I'm working on a machine learning project for chord recognition in a music recommendation system, as well as building audio DSP plugins for web-based applications.
 						<br />
 						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
-						
+
 					</h5>
 					<br />
 				</div>
-				<br /><br/><br/><br/>
+				<br /><br /><br /><br />
 				<div id="technical-skills" className="technical-text">
 					<h3>Technical Skills</h3>
 					<div><span style={{ color: "white" }}>Programming Languages: </span>
@@ -106,9 +113,26 @@ const Home: React.FC = () => {
 					<Education />
 				</div>
 
+				<div id="contact" className="contact-text">
+					<Contact />
+				</div>"
 
 			</div>
+
+			<div className="icons">
+				<a href="https://github.com/yunma-code" target="_blank" rel="noopener noreferrer" className="icons-icon">
+					<GitHubIcon />
+				</a>
+				<a href="https://www.linkedin.com/in/yun-ma-4791a819b/" target="_blank" rel="noopener noreferrer" className="icons-icon">
+					<LinkedinIcon />
+				</a>
+			</div>
+			
+			
+
+
 		</div>
+
 	);
 };
 

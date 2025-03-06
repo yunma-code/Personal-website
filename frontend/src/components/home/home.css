@@ -22,6 +22,10 @@
   overflow-y: auto;
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .right-box {
@@ -74,7 +78,7 @@
   text-align: left;
   font-size: 18px;
   color: white;
-  overflow: visible !important; 
+  overflow: visible !important;
   font-family: "Roboto", sans-serif;
 }
 
@@ -87,7 +91,7 @@
   text-align: left;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.505);
-  overflow: visible !important; 
+  overflow: visible !important;
   font-family: "Roboto", sans-serif, monospace;
   line-height: 1.8;
   margin-bottom: 16px;
@@ -104,7 +108,7 @@
   text-align: left;
   font-size: 17px;
   color: white;
-  overflow: visible !important; 
+  overflow: visible !important;
   color: rgba(255, 255, 255, 0.505);
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
@@ -113,11 +117,12 @@
 
 .technical-text h3 {
   color: rgba(255, 255, 255, 0.505);
- 
+
 }
+
 .technical-text li {
   color: white;
-  
+
 }
 
 .navigation-links {
@@ -144,14 +149,16 @@
   margin-bottom: 20px;
 }
 
-.navigation-links a {
+.navigation-links li button {
   color: white;
   text-decoration: none;
   font-weight: bold;
   position: relative;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
 }
 
-.navigation-links ul li a::after {
+.navigation-links ul li button::after {
   content: "";
   width: 0;
   height: 4px;
@@ -162,7 +169,7 @@
   transition: width 300ms ease-in-out;
 }
 
-.navigation-links a:hover::after {
+.navigation-links button:hover::after {
   width: 100%;
 }
 
@@ -171,7 +178,7 @@
   text-align: left;
   font-size: 18px;
   color: white;
-  overflow: visible !important; 
+  overflow: visible !important;
 }
 
 .education-text {
@@ -179,17 +186,40 @@
   text-align: left;
   font-size: 18px;
   color: white;
-  overflow: visible !important; 
+  overflow: visible !important;
 }
 
 .technical-text,
 .projects-text,
 .education-text {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 .technical-text h3,
 .projects-text h3,
 .education-text h3 {
+  color: white;
+}
+
+
+.icons {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  padding: 10px;
+}
+
+.icons-icon {
+  color: white;
+}
+
+.contact-text {
   color: white;
 }

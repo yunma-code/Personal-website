@@ -2,9 +2,17 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "moduleResolution": "node",
-    "allowJs": true,
+    "allowJs": false,
     "resolveJsonModule": true,
-    "strict": true,
-    "esModuleInterop": true
-  }
+    "strict": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public",
+    "postcss.config.js",
+    "tailwind.config.js"
+  ]
 }
