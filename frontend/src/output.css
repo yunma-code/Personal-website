@@ -1,0 +1,16 @@
+/*! tailwindcss v4.0.10 | MIT License | https://tailwindcss.com */
+.me-auto {
+  margin-inline-end: auto;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.rounded-full {
+  border-radius: calc(infinity * 1px);
+}

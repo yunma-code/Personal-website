@@ -5,6 +5,7 @@ import Home from './components/home/home';
 import About from './components/about/about';
 import { useState, useEffect } from "react";
 
+
 function App() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 

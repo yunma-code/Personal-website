@@ -33,6 +33,7 @@
   text-align: left;
   /* background-color: rgb(7, 11, 38, 0.2); */
   /* text-align: left; */
+  font-family: "Roboto", sans-serif;
   overflow-y: auto;
 }
 
@@ -47,12 +48,13 @@
   color: white;
   font-weight: bold;
   letter-spacing: 4px;
+  font-size: 20px;
 }
 
 .left-box h5 {
   color: white;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .welcome-text {
@@ -73,26 +75,61 @@
   font-size: 18px;
   color: white;
   overflow: visible !important; 
+  font-family: "Roboto", sans-serif;
 }
 
+.content-text h1 {
+  font-size: 25px;
+}
 
-
-.technical-text {
-  padding-left: 5%;
+.intro-text {
   overflow-y: auto;
   text-align: left;
   font-size: 18px;
+  color: rgba(255, 255, 255, 0.505);
+  overflow: visible !important; 
+  font-family: "Roboto", sans-serif;
+
+}
+
+.intro-text h5 {
+  color: rgba(255, 255, 255, 0.505);
+  letter-spacing: 2px;
+}
+
+.technical-text {
+  overflow-y: auto;
+  text-align: left;
+  font-size: 17px;
   color: white;
   overflow: visible !important; 
+  color: rgba(255, 255, 255, 0.505);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+
 }
 
 .technical-text h3 {
-  color: white;
+  color: rgba(255, 255, 255, 0.505);
  
 }
 .technical-text li {
   color: white;
   
+}
+
+.navigation-links {
+  position: sticky;
+  width: 80%;
+  left: 2%;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: 20px;
+  overflow-y: auto;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 3px;
 }
 
 .navigation-links ul {
@@ -101,17 +138,45 @@
 }
 
 .navigation-links li {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .navigation-links a {
-  color: #2980b9;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
 }
 
-.navigation-links a:hover {
-  text-decoration: underline;
+.navigation-links ul li a::after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #2980b9;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: width 300ms ease-in-out;
+}
+
+.navigation-links a:hover::after {
+  width: 100%;
+}
+
+.projects-text {
+  overflow-y: auto;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  overflow: visible !important; 
+}
+
+.education-text {
+  overflow-y: auto;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  overflow: visible !important; 
 }
 
 .technical-text,

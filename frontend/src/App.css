@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -44,13 +46,13 @@
 /* cursor */
 .cursor {
   position: fixed;
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   pointer-events: none; 
-  background: radial-gradient(circle, rgba(41, 67, 133, 0.107) 10%,rgba(42, 97, 116, 0.377)) 80%;
+  background: radial-gradient(circle, rgba(41, 67, 133, 0.054) 10%,rgba(42, 97, 116, 0.377)) 90%;
   mix-blend-mode: lighten;
-  filter: blur(25px);
+  filter: blur(55px);
   z-index: 9999; 
   transform: translate(-50%, -50%);
 }
