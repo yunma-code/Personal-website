@@ -4,6 +4,13 @@ import "./home.css";
 
 const Home: React.FC = () => {
 
+	const handleScroll = (id: string) => {
+		const element = document.getElementById(id);
+		if(element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<div className="home-container">
 			<div className="left-box">
@@ -19,22 +26,25 @@ const Home: React.FC = () => {
 				<div className="navigation-links">
 					<ul>
 						<li>
-							<a href="#technical-skills"> Technical Skills</a>
+							<a onClick={() => handleScroll("about")}>About</a>
 						</li>
 						<li>
-							<a href="#projects">Projects</a>
+							<a onClick={() => handleScroll("technical-skills")}> Technical Skills</a>
 						</li>
 						<li>
-							<a href="#education">Education & Experience</a>
+							<a onClick={() => handleScroll("projects")}>Projects</a>
+						</li>
+						<li>
+							<a onClick={() => handleScroll("education")}>Education & Experience</a>
 						</li>
 					</ul>
 				</div>
 
 			</div>
 
-
 			<div className="right-box">
-				<div className="intro-text ">
+				<div id="about" className="intro-text ">
+					<br/>
 					<h5>
 						I'm a software developer and musician based in Boston, passionate
 						about{" "} <br />
@@ -54,15 +64,18 @@ const Home: React.FC = () => {
 							Music Technology.
 						</span>
 						<br />
+						<br/>
 						<p className="mb-6">
 							My interest lies on software development and machine learning, with a focus on creating platforms and tools that enhance user experiences. Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
 						Currently, I'm working on a machine learning project for chord recognition in a music recommendation system, as well as building audio DSP plugins for web-based applications.
 						<br />
-						Check out my work in coding, interactive sound installation and music composition!
+						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
+						
 					</h5>
 					<br />
 				</div>
+				<br /><br/><br/><br/>
 				<div id="technical-skills" className="technical-text">
 					<h3>Technical Skills</h3>
 					<div><span style={{ color: "white" }}>Programming Languages: </span>

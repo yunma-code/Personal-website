@@ -85,16 +85,18 @@
 .intro-text {
   overflow-y: auto;
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.505);
   overflow: visible !important; 
-  font-family: "Roboto", sans-serif;
-
+  font-family: "Roboto", sans-serif, monospace;
+  line-height: 1.8;
+  margin-bottom: 16px;
 }
 
 .intro-text h5 {
   color: rgba(255, 255, 255, 0.505);
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
 }
 
 .technical-text {
@@ -130,6 +132,7 @@
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   letter-spacing: 3px;
+  color: white;
 }
 
 .navigation-links ul {
