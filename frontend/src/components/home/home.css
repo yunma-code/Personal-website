@@ -103,26 +103,8 @@
   margin-bottom: 20px;
 }
 
-.technical-text {
-  overflow-y: auto;
-  text-align: left;
-  font-size: 17px;
-  color: white;
-  overflow: visible !important;
-  color: rgba(255, 255, 255, 0.505);
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-
-}
-
-.technical-text h3 {
-  color: rgba(255, 255, 255, 0.505);
-
-}
-
-.technical-text li {
-  color: white;
-
+.intro {
+  padding-right: 8px;
 }
 
 .navigation-links {
@@ -223,3 +205,4 @@
 .contact-text {
   color: white;
 }
+

@@ -20,17 +20,17 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-		const form = e.target as HTMLFormElement;
+    const form = e.target as HTMLFormElement;
 
     emailjs
       .sendForm("service_15pcu43", "template_74v9w78", form, "jpI50jt1j2bQIT96E")
       .then(
         (result) => {
-					console.log(result.text);
+          console.log(result.text);
           setStatus("Message sent successfully!");
         },
         (error) => {
-					console.log(error.text);
+          console.log(error.text);
           setStatus("There was an error sending your message.");
         }
       );
@@ -38,9 +38,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="max-w-xl ml-0 mr-auto p-6 bg-gray-900 text-white rounded-lg">
+      <div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
         <h1 className="text-3xl font-semibold mb-4">Contact</h1>
-				<h2 className="text-sm"> Feel free to reach out for any inquiries or collaboration!</h2>
+        <h2 className="text-base"> Feel free to reach out for any inquiries or collaboration!</h2>
         <div className="flex gap-5 place-items-start">
         </div>
 
@@ -100,9 +100,8 @@ const Contact = () => {
 
         {status && (
           <div
-            className={`mt-4 p-4 rounded-lg ${
-              status.includes("error") ? "bg-red-500" : "bg-green-500"
-            } text-white`}
+            className={`mt-4 p-4 rounded-lg ${status.includes("error") ? "bg-red-400" : "bg-green-900"
+              } text-white`}
           >
             {status}
           </div>

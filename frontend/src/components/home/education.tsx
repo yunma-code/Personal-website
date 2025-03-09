@@ -3,7 +3,7 @@ import "../../tailwind.css";
 const Education = () => {
 	return (
 		<>
-			<div className="bg-gray-900 text-white p-6 rounded-lg max-w-xl">
+			<div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
 				<div className="flex gap-5 place-items-start">
 					<p className="text-gray-400 text-sm">2023 — PRESENT
 					</p>
@@ -18,7 +18,7 @@ const Education = () => {
 				</div>
 			</div>
 			<br />
-			<div className="bg-gray-900 text-white p-6 rounded-lg max-w-xl">
+			<div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
 				<div className="flex gap-5 place-items-start">
 					<p className="text-gray-400 text-sm">2021 — 2023
 					</p>
@@ -33,7 +33,7 @@ const Education = () => {
 				</div>
 			</div>
 			<br />
-			<div className="bg-gray-800 text-white p-6 rounded-lg max-w-xl">
+			<div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
 				<div className="flex gap-5 place-items-start">
 					<p className="text-gray-400 text-sm">2021 Apr-Aug
 					</p>

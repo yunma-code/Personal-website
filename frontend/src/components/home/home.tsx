@@ -2,6 +2,7 @@ import Education from "./education";
 import "./home.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Contact from "./contact";
+import Technical from "./technical";
 
 const Home: React.FC = () => {
 
@@ -72,33 +73,22 @@ const Home: React.FC = () => {
 						</span>
 						<br />
 						<br />
-						<p className="mb-6">
-							My interest lies on software development and machine learning, with a focus on creating platforms and tools that enhance user experiences. Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
+						<p className="intro">
+							My interest lies on software development and machine learning, 
+							with a focus on creating platforms and tools that enhance user experiences. 
+							Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
-						Currently, I'm working on a machine learning project for chord recognition in a music recommendation system, as well as building audio DSP plugins for web-based applications.
-						<br />
+						Currently, I'm working on a machine learning project for chord recognition in a music 
+						recommendation system, as well as building audio DSP plugins for web-based applications.
+						<br /><br />
 						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
 
 					</h5>
 					<br />
 				</div>
 				<br /><br /><br /><br />
-				<div id="technical-skills" className="technical-text">
-					<h3>Technical Skills</h3>
-					<div><span style={{ color: "white" }}>Programming Languages: </span>
-						Java, JavaScript, TypeScript, C++, Python, HTML/CSS, SQL</div>
-					<div><span style={{ color: "white" }}>Frameworks & Libraries: </span>
-						React, Node.js, Next.js, REST APIs</div>
-					<div><span style={{ color: "white" }}>Database Management: </span>
-						MySQL, NoSQL, MongoDB, PostgreSQL</div>
-					<div><span style={{ color: "white" }}>Cloud Platforms: </span>
-						AWS Cloud Architecture, AWS Machine Learning</div>
-					<div><span style={{ color: "white" }}>Tools & DevOps: </span>
-						Linux, Bash, Git, CMake, Makefile</div>
-					<div><span style={{ color: "white" }}>Machine Learning: </span>
-						PyTorch, scikit-learn, Numpy, pandas, Matplotlib</div>
-					<div><span style={{ color: "white" }}>Audio Tools: </span>DAW, Processing, MaxMSP</div>
-				</div>
+				<Technical />
+
 
 				<div id="projects" className="projects-text">
 					<h3>Projects</h3>
