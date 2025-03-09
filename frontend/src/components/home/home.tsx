@@ -3,6 +3,7 @@ import "./home.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Contact from "./contact";
 import Technical from "./technical";
+import Project from "./project";
 
 const Home: React.FC = () => {
 
@@ -35,13 +36,13 @@ const Home: React.FC = () => {
 							<button onClick={() => handleScroll("about")}>About</button>
 						</li>
 						<li>
-							<button onClick={() => handleScroll("technical-skills")}> Technical Skills</button>
+							<button onClick={() => handleScroll("education")}>Education & Experience</button>
+						</li>
+						<li>
+							<button onClick={() => handleScroll("technicals")}> Technical Skills</button>
 						</li>
 						<li>
 							<button onClick={() => handleScroll("projects")}>Projects</button>
-						</li>
-						<li>
-							<button onClick={() => handleScroll("education")}>Education & Experience</button>
 						</li>
 						<li>
 							<button onClick={() => handleScroll("contact")}>Contact</button>
@@ -74,11 +75,11 @@ const Home: React.FC = () => {
 						<br />
 						<br />
 						<p className="intro">
-							My interest lies on software development and machine learning, 
-							with a focus on creating platforms and tools that enhance user experiences. 
+							My interest lies on software development and machine learning,
+							with a focus on creating platforms and tools that enhance user experiences.
 							Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
-						Currently, I'm working on a machine learning project for chord recognition in a music 
+						Currently, I'm working on a machine learning project for chord recognition in a music
 						recommendation system, as well as building audio DSP plugins for web-based applications.
 						<br /><br />
 						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
@@ -87,20 +88,17 @@ const Home: React.FC = () => {
 					<br />
 				</div>
 				<br /><br /><br /><br />
-				<Technical />
-
-
-				<div id="projects" className="projects-text">
-					<h3>Projects</h3>
-					<div>Project 1: </div>
-					<div>Project 2: </div>
-					<div>Project 3: </div>
-
-				</div>
-
 
 				<div id="education" className="education-text">
 					<Education />
+				</div>
+
+				<div id="technicals" >
+					<Technical />
+				</div>
+
+				<div id="projects" className="projects-text">
+					<Project />
 				</div>
 
 				<div id="contact" className="contact-text">
@@ -117,8 +115,8 @@ const Home: React.FC = () => {
 					<LinkedinIcon />
 				</a>
 			</div>
-			
-			
+
+
 
 
 		</div>
