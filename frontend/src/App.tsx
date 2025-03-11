@@ -21,6 +21,10 @@ function App() {
   useEffect(() => {
     const apiURL = process.env.REACT_APP_API_URL;
     console.log(apiURL);
+    fetch(`${apiURL}/your-endpoint`) 
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error fetching data: ', error));
   }, []);
 
   return (
