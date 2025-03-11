@@ -22,7 +22,7 @@ function App() {
     <>
     <div className="cursor" style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }} />
       <div className="app-container">
-        <Navigation />
+        {/* <Navigation /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -1,6 +1,6 @@
 import Education from "./education";
 import "./home.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSoundcloud } from "react-icons/fa";
 import Contact from "./contact";
 import Technical from "./technical";
 import Project from "./project";
@@ -16,6 +16,7 @@ const Home: React.FC = () => {
 
 	const GitHubIcon = FaGithub as unknown as React.FC;
 	const LinkedinIcon = FaLinkedin as unknown as React.FC;
+	const SoundcloudIcon = FaSoundcloud as unknown as React.FC;
 
 
 	return (
@@ -106,19 +107,25 @@ const Home: React.FC = () => {
 				</div>"
 
 			</div>
-
-			<div className="icons">
-				<a href="https://github.com/yunma-code" target="_blank" rel="noopener noreferrer" className="icons-icon">
-					<GitHubIcon />
-				</a>
-				<a href="https://www.linkedin.com/in/yun-ma-4791a819b/" target="_blank" rel="noopener noreferrer" className="icons-icon">
-					<LinkedinIcon />
-				</a>
+			<div className="bottom">
+				<div className="icons">
+					<a href="https://github.com/yunma-code" target="_blank" rel="noopener noreferrer" className="icons-icon">
+						<GitHubIcon />
+					</a>
+					<a href="https://www.linkedin.com/in/yun-ma-4791a819b/" target="_blank" rel="noopener noreferrer" className="icons-icon">
+						<LinkedinIcon />
+					</a>
+					<a href="https://soundcloud.com/yunmamusic" target="_blank" rel="noopener noreferrer" className="icons-icon">
+						<SoundcloudIcon />
+					</a>
+					<br />
+				</div>
+				<div className="copyright">
+					© 2024 Yun Ma. 
+					Designed and built by Yun :)
+				</div>
 			</div>
-
-
-
-
+			<br />
 		</div>
 
 	);

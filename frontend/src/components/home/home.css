@@ -187,9 +187,10 @@
 .icons {
   display: flex;
   gap: 15px;
+  justify-content: center;
   flex-direction: row;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   left: 20px;
   display: flex;
   align-items: center;
@@ -206,3 +207,25 @@
   color: white;
 }
 
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 5px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
