@@ -107,6 +107,7 @@ const Contact = () => {
           </div>
         )}
       </div>
+      <br /><br />
     </>
   );
 };

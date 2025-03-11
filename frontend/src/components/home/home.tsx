@@ -4,14 +4,21 @@ import { FaGithub, FaLinkedin, FaSoundcloud } from "react-icons/fa";
 import Contact from "./contact";
 import Technical from "./technical";
 import Project from "./project";
+import { useState } from "react";
 
 const Home: React.FC = () => {
+
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	const handleScroll = (id: string) => {
 		const element = document.getElementById(id);
 		if (element) {
 			element.scrollIntoView({ behavior: "smooth" });
+			setMenuOpen(false);
 		}
+	};
+	const toggleMenu = () => {
+		setMenuOpen(!menuOpen);
 	};
 
 	const GitHubIcon = FaGithub as unknown as React.FC;
@@ -22,39 +29,25 @@ const Home: React.FC = () => {
 	return (
 		<div className="home-container">
 			<div className="left-box">
-				<div className="content-text">
-					<h1>
-						Yun Ma
-					</h1>
+				<div className="menu-toggle" onClick={toggleMenu}>
+					<h1>Yun Ma</h1>
 					<h4>Bridging music and tech</h4>
-
-					<br />
 				</div>
 
-				<div className="navigation-links">
+				<div className={`navigation-links ${menuOpen ? "show" : ""}`}>
 					<ul>
-						<li>
-							<button onClick={() => handleScroll("about")}>About</button>
-						</li>
-						<li>
-							<button onClick={() => handleScroll("education")}>Education & Experience</button>
-						</li>
-						<li>
-							<button onClick={() => handleScroll("technicals")}> Technical Skills</button>
-						</li>
-						<li>
-							<button onClick={() => handleScroll("projects")}>Projects</button>
-						</li>
-						<li>
-							<button onClick={() => handleScroll("contact")}>Contact</button>
-						</li>
+						<li><button onClick={() => handleScroll("about")}>About</button></li>
+						<li><button onClick={() => handleScroll("education")}>Education & Experience</button></li>
+						<li><button onClick={() => handleScroll("technicals")}>Technical Skills</button></li>
+						<li><button onClick={() => handleScroll("projects")}>Projects</button></li>
+						<li><button onClick={() => handleScroll("contact")}>Contact</button></li>
 					</ul>
 				</div>
 			</div>
 
 			<div className="right-box">
 				<div id="about" className="intro-text ">
-					<br />
+					<br /><br />
 					<h5>
 						I'm a software developer and musician based in Boston, passionate
 						about{" "} <br />
@@ -104,9 +97,9 @@ const Home: React.FC = () => {
 
 				<div id="contact" className="contact-text">
 					<Contact />
-				</div>"
-
+				</div>
 			</div>
+
 			<div className="bottom">
 				<div className="icons">
 					<a href="https://github.com/yunma-code" target="_blank" rel="noopener noreferrer" className="icons-icon">
@@ -121,7 +114,7 @@ const Home: React.FC = () => {
 					<br />
 				</div>
 				<div className="copyright">
-					© 2024 Yun Ma. 
+					© 2024 Yun Ma.
 					Designed and built by Yun :)
 				</div>
 			</div>
