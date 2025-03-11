@@ -18,6 +18,11 @@ function App() {
     return() => document.removeEventListener("mousemove", updateCursor);
   }, []);
 
+  useEffect(() => {
+    const apiURL = process.env.REACT_APP_API_URL;
+    console.log(apiURL);
+  }, []);
+
   return (
     <>
     <div className="cursor" style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }} />
