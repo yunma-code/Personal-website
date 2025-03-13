@@ -5,6 +5,7 @@ import Contact from "./contact";
 import Technical from "./technical";
 import Project from "./project";
 import { useState } from "react";
+import "../../tailwind.css";
 
 const Home: React.FC = () => {
 
@@ -46,7 +47,7 @@ const Home: React.FC = () => {
 			</div>
 
 			<div className="right-box">
-				<div id="about" className="intro-text ">
+				<div id="about" className="intro-text">
 					<br /><br />
 					<h5>
 						I'm a software developer and musician based in Boston, passionate
