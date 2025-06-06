@@ -74,8 +74,9 @@ const Home: React.FC = () => {
 							with a focus on creating platforms and tools that enhance user experiences.
 							Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
-						Currently, I'm working on a machine learning project for chord recognition in a music
-						recommendation system, as well as building audio DSP plugins for web-based applications.
+						{/* Currently, I'm working on a machine learning project for chord recognition in a music
+						recommendation system, as well as building audio DSP plugins for web-based applications. */}
+						I'm currently developing a parsing tool for p5.sound.js and Processing.sound, while also exploring agentic architectures for building AI agents.
 						<br /><br />
 						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
 

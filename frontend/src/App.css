@@ -46,11 +46,12 @@
 /* cursor */
 .cursor {
   position: fixed;
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   pointer-events: none; 
-  background: radial-gradient(circle, rgba(41, 67, 133, 0.054) 20%,rgba(42, 97, 116, 0.377)) 90%;
+  
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 20%,rgba(255, 255, 255, 0.03)) 90%;
   mix-blend-mode: lighten;
   filter: blur(55px);
   z-index: 9999; 

@@ -4,6 +4,22 @@ const Project = () => {
 	return (
 		<>
 		<h1 className="text-3xl font-bold mb-4 text-white">Personal Projects </h1>
+
+		<div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
+			<div className="flex flex-col items-start rounded-lg">
+				<h1 className="text-2xl font-bold mb-4 text-white">MIDI-Trained Chord Recognition Model</h1>
+				
+				<br/> 
+				<h2 className="text-base mb-4 text-white">Developed hybrid CNN-BiLSTM model for MIDI chord recognition, achieving 5pp F1 improvement (0.79→0.84) over baseline through local harmonic pattern extraction and bidirectional temporal modeling.
+				<br/><br/>
+				Built preprocessing pipeline extracting 12D chroma vectors from 96k MIDI frames with 60-class chord vocabulary and 3D tensor formatting for scalable deep learning training.
+				<br/>
+				Evaluated 5 architectures (SVM, CNN, RNN, BiLSTM, hybrid) using mir eval metrics, demonstrating statistical significance (p &lt; 0.01) of hybrid approach with confusion matrix analysis. 
+				</h2>
+				<h2 className="text-base mb-4 text-white">Github Repo Link: <a href="https://github.com/yunma-code/MIDI-Trained-Chord-Recognition-Model" className="text-blue-500">MIDI-Trained Chord Recognition Model</a></h2>
+			</div>
+		</div>
+
 		<div className="max-w-3xl ml-0 mr-auto p-6 bg-gray-900 bg-opacity-0 hover:bg-opacity-100 transition duration-300 text-white rounded-lg">
 			<div className="flex flex-col items-start rounded-lg">
 				<h1 className="text-2xl font-bold mb-4 text-white">Canvas Web Application</h1>
