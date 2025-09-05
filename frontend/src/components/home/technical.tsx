@@ -37,7 +37,7 @@ const Technical = () => {
 						Tech Stack <Downicon />
 					</h1>
 					<div className="flex flex-wrap gap-1 mt-4">
-						{["React", "JavaScript", "TypeScript", "Node.js", "Next.js", "REST APIs", "Tailwind CSS", "HTML/CSS", "Postman", "MongoDB", "SQL", "WebAssembly"].map((tech) => (
+						{["React", "JavaScript", "TypeScript", "Node.js", "Next.js", "REST APIs", "Tailwind CSS", "HTML/CSS", "Postman", "MongoDB", "SQL", "WebAssembly", "WebGL", "Web Audio API"].map((tech) => (
 							<p key={tech} className="bg-gray-300 text-black px-3 py-1 rounded-full text-sm mt-2">{tech}</p>
 						))}
 					</div>
@@ -54,7 +54,7 @@ const Technical = () => {
 						Tech Stack <Downicon />
 					</h1>
 					<div className="flex flex-wrap gap-1 mt-4">
-						{["Python", "Pytorch", "scikit-learn", "Postgre SQL", "Numpy", "Pandas", "Matplotlib"].map((tool) => (
+						{["Python", "Pytorch", "scikit-learn", "Postgre SQL", "Numpy", "Pandas", "Matplotlib", "Google ADK"].map((tool) => (
 							<p key={tool} className="bg-gray-300 text-black px-3 py-1 rounded-full text-sm mt-2">{tool}</p>
 						))}
 						<p className="flex items-center gap-1 bg-gray-300 text-black px-3 py-1 rounded-full text-sm mt-2">
@@ -90,7 +90,7 @@ const Technical = () => {
 							"Git",
 							"Docker",
 							"Kubernetes",
-							"CI/CD"
+							"CI/CD", "GCP", "Firebase"
 						].map((tool) => (
 							<p key={tool} className="bg-gray-300 text-black px-3 py-1 rounded-full text-sm mt-2">{tool}</p>
 						))}

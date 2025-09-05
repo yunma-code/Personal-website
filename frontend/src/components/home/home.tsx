@@ -32,7 +32,7 @@ const Home: React.FC = () => {
 			<div className="left-box">
 				<div className="menu-toggle" onClick={toggleMenu}>
 					<h1>Yun Ma</h1>
-					<h4>Bridging music and tech</h4>
+					<h5>Bridging music and tech</h5>
 				</div>
 
 				<div className={`navigation-links ${menuOpen ? "show" : ""}`}>
@@ -74,9 +74,7 @@ const Home: React.FC = () => {
 							with a focus on creating platforms and tools that enhance user experiences.
 							Drawing from my background in music composition, I'm particularly interested in developing technologies that bridge music and technology.
 						</p>
-						{/* Currently, I'm working on a machine learning project for chord recognition in a music
-						recommendation system, as well as building audio DSP plugins for web-based applications. */}
-						I'm currently developing a parsing tool for p5.sound.js and Processing.sound, while also exploring agentic architectures for building AI agents.
+						I'm currently contributing to ongoing research in human-computer interaction and creativity support tools with a particular focus on musical application.
 						<br /><br />
 						<span style={{ color: "white" }}>Check out my work in coding, interactive sound installation and music composition!</span>
 
@@ -116,7 +114,7 @@ const Home: React.FC = () => {
 					<br />
 				</div>
 				<div className="copyright">
-					© 2024 Yun Ma.
+					© 2025 Yun Ma.
 					Designed and built by Yun :)
 				</div>
 			</div>
