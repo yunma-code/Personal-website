@@ -28,7 +28,7 @@ const Home: React.FC = () => {
 
 
 	return (
-		<div className="home-container">
+		<div className="home-container" style={{ backgroundColor: "#2b323b" }}>
 			<div className="left-box">
 				<div className="menu-toggle" onClick={toggleMenu}>
 					<h1>Yun Ma</h1>
